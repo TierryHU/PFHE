@@ -60,10 +60,10 @@ Cc = mc*Cpc;
 Cmax = Cc;
 Cmin = Ch;
 %Q=1070kw
-Hh = H;%≥·∆¨€¨
+Hh = H;
 Hc = H;
 
-nh = n;%≥·∆¨√‹∂»
+nh = n;
 nc = n;
 
 s = (1/n-t);%(34)
@@ -92,7 +92,7 @@ Gc = mc/Affc;
 Reh = (mh*dh)/(Affh*muh); % (32)
 Rec = (mc*dh)/(Affc*muc); %
 
-%For laminar flow (Re£º1500)
+%For laminar flow (ReÔºú1500)
 if Reh>1500
 
         jh = 0.21*(Reh^(-0.4))*((l/dh)^(-0.24))*(t/dh)^(0.02);%(30)
@@ -114,7 +114,7 @@ else
 end
 %deltaPa = (2*fa*(ma^2)*La)/(rhob*Dha*(Lb^2)*(Na^2)*((Ha-ta)^2)*((1-na*ta)^2));%(26)
 %deltaPb = (2*fb*(mb^2)*Lb)/(rhoa*Dhb*(La^2)*(Nb^2)*((Hb-tb)^2)*((1-nb*tb)^2));%(27)
-deltaPh = (2*fh*Lh*(Gh^2))/(rhoh*Dhh);%deltaP”¶–°”⁄10^5
+deltaPh = (2*fh*Lh*(Gh^2))/(rhoh*Dhh);%deltaPÂ∫îÂ∞è‰∫é10^5
 deltaPc = (2*fc*Lc*(Gc^2))/(rhoc*Dhc);
 
 Ah = Lh*Lc*Nh*(1+2*nh*(Hh-t));%(22)
@@ -126,10 +126,10 @@ NTU = (1/Cmin)*((jh*Cph*(Prh^(-(2/3)))*mh*Ah)/Affh+(jc*Cpc*(Prc^(-(2/3)))*mc*Ac)
 epsilon = 1-exp((1/Cr)*(NTU^0.22)*(exp((-Cr)*(NTU^(0.78)))-1));
 
 Q = epsilon*Cmin*(Th-Tc);
-% Qx = (160000 - Q);%∑£∫Ø ˝≤ø∑÷
+% Qx = (160000 - Q);
 Qx = (1070000 - Q);
 Qx = abs(Qx);
-%Ra = Pa1/(Ta1*rhoa);%∑÷◊”∑÷ƒ∏¥Ú¿®∫≈
+%Ra = Pa1/(Ta1*rhoa);
 %Rb = Pb1/(Tb1*rhob);
 %Ra = Ph*(1/rhoh)/Th;
 %Rb = Pc*(1/rhoc)/Tc;
